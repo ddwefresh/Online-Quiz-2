@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="quiz 2 js.js"></script>
+	<title>Online Quiz 2</title>
+	
+	<div id="theme">
+		<link rel=stylesheet href="quiz2 style.css">
+	</div>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gudea&display=swap" rel="stylesheet">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div align="center">  
+		<form>
+			<h1 id="title">Online Quiz</h1>
+			<h3>(Worth 18 points)</h3>
+			<div id="name">
+				<label for="username">Name: </label> 
+				<input type="text" class="textbox" id="username" name="username">
+				<button class="button_small" type="button" onClick="buttonFunctionName()" >Confirm</button>
+			</div>
+		</form>
+	</div>
+	<div class="content">
+		<form>
+			<h2><u>Written Response</u></h2>
+			<h3 class="questionA">1 - What is Obama's last name? (1 Point)</h3>
+			<label for="questionA1">Enter:</label> 
+			<input type="text" class="textbox" id="questionA1" name="questionA1"> 
+			<p class="check"></p>
+			<p class="answer"></p>
+			<br>
+			
+			<h3 class="questionB">2 - What year was Undertale released? (1 Point)</h3>
+			<label for="questionA2">Enter:</label>
+			<input type="text" class="textbox" id="questionA2" name="questionA2">
+			<p class="check"></p>
+			<p class="answer"></p>
+			<br>
+			
+			<h3 class="questionA">3 - What is the real color of the sun? (1 Point)</h3>
+			<label for="questionA3">Enter:</label>
+			<input type="text" class="textbox" id="questionA3" name="questionA3">
+			<p class="check"></p>
+			<p class="answer"></p>
+			<br>
+			
+			<h2><u>Multiple Choice</u></h2>		
+			<h3 class="questionB">1 - Facebook's original name was: (1 Point)</h3>
+			<input class="click_box" type="radio" id="mc1a1" name="mc1">
+			<label for="mc1a1">Facenovel</label>
+			<br><br>
+			
+			<input class="click_box" type="radio" id="mc1a2" name="mc1">
+			<label for="mc1a2">TheFacebook</label>
+			<br><br>
+			
+			<input class="click_box" type="radio" id="mc1a3" name="mc1">
+			<label for="mc1a3">SocialNet</label>
+			<p class="check"></p>
+			<p class="answer"></p>
+			<br>
+			
+			<h3 class="questionA">2 - What kind of cookie is in Squid Game? (1 Point)</h3>
+			<input class="click_box" type="radio" id="mc2a1" name="mc2">
+			<label for="mc2a1">Dalgona</label>
+			<br><br>
+			
+			<input class="click_box" type="radio" id="mc2a2" name="mc2">
+			<label for="mc2a2">Shortbread</label>
+			<br><br>
+			
+			<input class="click_box" type="radio" id="mc2a3" name="mc2">
+			<label for="mc2a3">Gingerbread</label>
+			<p class="check"></p>
+			<p class="answer"></p>
+			<br>
+			
+			<h2><u>Multiple Answers</u></h2>	
+			<h3 class="questionB">1 - Select all that you cannot feed a dog. (2 Points)</h3>
+			<input class="click_box" type="checkbox" id="ma1a1" name="ma1a1">
+			<label for="ma1a1">Oranges</label>
+			<br><br>
+			
+			<input class="click_box" type="checkbox" id="ma1a2" name="ma1a2">
+			<label for="ma1a2">Avocado</label>
+			<br><br>
+			
+			<input class="click_box" type="checkbox" id="ma1a3" name="ma1a3">
+			<label for="ma1a3">Chocolate</label>
+			<p class="check"></p>
+			<p class="answer"></p>
+			<br>
+			
+			<h3 class="questionA">2 - Select all that are a species of whale. (2 Points)</h3>
+			<input class="click_box" type="checkbox" id="ma2a1" name="ma2a1">
+			<label for="ma2a1">Humpback</label>
+			<br><br>
+			
+			<input class="click_box" type="checkbox" id="ma2a2" name="ma2a2">
+			<label for="ma2a2">Whaleshark</label>
+			<br><br>
+			
+			<input class="click_box" type="checkbox" id="ma2a3" name="ma2a3">
+			<label for="ma2a3">Dolphin</label>
+			<p class="check"></p>
+			<p class="answer"></p>
+			<br>
+		</form>
+	
+		<h2><u>Reordering</u></h2>	
+		<h3 class="questionB">Reorder these planets from big to small (1. - 4.). (4 Points)</h3>
+		<div class="reorder">
+			<p class="4qrcolor" id="r1q1" onClick="r1q1()">1. Mercury</p>
+			<p class="4qrcolor" id="r1q2" onClick="r1q2()">2. Earth</p>
+			<p class="4qrcolor" id="r1q3" onClick="r1q3()">3. Saturn</p>
+			<p class="4qrcolor" id="r1q4" onClick="r1q4()">4. Neptune</p>
+		</div>
+		<p class="check"></p>
+		<p class="answer"></p>
+		<br>
+		
+		<h2><u>Matching</u></h2>	
+		<h3 class="questionA">Match the color to the fruit. (5 Points)</h3>
+		<button class="button_redm" type="button" onClick="button_red()" >Red</button>
+		<button class="button_yellowm" type="button" onClick="button_yellow()" >Yellow</button>
+		<button class="button_bluem" type="button" onClick="button_blue()" >Blue</button>
+		<button class="button_greenm" type="button" onClick="button_green()" >Green</button>
+		<div>
+			<p class="4qmcolor" id="m1q1" onClick="m1q1()">Kiwi: </p>
+			<p class="4qmcolor" id="m1q2" onClick="m1q2()">Cherry: </p>
+			<p class="4qmcolor" id="m1q3" onClick="m1q3()">Lime: </p>
+			<p class="4qmcolor" id="m1q4" onClick="m1q4()">Banana: </p>
+			<p class="4qmcolor" id="m1q5" onClick="m1q5()">Blueberry: </p>
+			<p class="check"></p>
+			<p class="answer"></p>
+		</div>	
+		<br>
+		
+		<div id="submit">
+			<a href="#top"><button class="button_submita" type="button" onClick="buttonFunction()" >Submit Answers</button></a>
+		</div>
+		<br><br><br><br>	
+		
+		<p align="right" style="position: fixed; right: 15px; bottom: -80px; width:150px; height: 100px;">By Matthew Quock</p>
+		
+		<div align="right" style="position: fixed; right: 150px; bottom: -55px; width:150px; height: 100px;">
+			<button class="button_small" type="button" onClick="theme()">Theme</button>
+		</div>
+		
+		<h1 class="results" align="right" id="results" style="position: fixed; right: 30px; top: -10px; width:325px; height: 100px;"></h1>
+		<h3 class="comment" align="right" id="comment" style="position: fixed; right: 30px; top: 35px; width:300px; height: 100px;"></h3>
+	</div>
+	<script src="quiz 2 js.js"></script>
+</body>
+</html>
